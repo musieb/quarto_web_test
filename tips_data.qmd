@@ -1,0 +1,30 @@
+---
+title: "Tips Data"
+format: html
+---
+
+# Description
+
+This is an analysis on the tips data set.
+
+# Import Data
+
+Let import the 
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df_tips = sns.load_dataset('tips')
+
+df_tips.head(10)
+```
+
+Let us create a histogram of the total bill.
+
+```{python}
+plt.style.use('fivethirtyeight')
+df_tips['total_bill'].hist()
+```
+
